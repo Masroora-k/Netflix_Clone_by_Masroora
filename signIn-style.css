@@ -1,0 +1,412 @@
+*{
+   
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/*--------------------HEADER-SECTION-----------------------------*/
+
+
+.full-body{
+   
+    width: 100%;
+    height: 200vh;
+    background-image: linear-gradient(rgba(4, 4, 4, 0.801),rgba(8, 8, 8, 0.39),rgba(14, 14, 14, 0.883)), url("image/IN-en-20240226-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+    background-size:cover;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+   
+}
+
+.text{
+    width: 9.25rem;
+  height: 2.5rem;
+  color: rgb(229, 9, 20);
+  fill: currentColor;
+  display: block;
+  font-weight: bold;
+  font-size: 2.5rem;
+  font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.text svg{
+  max-width: 100%;
+  height: auto;
+}
+@media (min-width: 820px) and (max-width: 1368px)
+      {
+    header {
+        background-size: 150%; 
+    }
+    .text svg {
+       
+        width: 70%; 
+        height: auto;
+    }
+    .logo {
+        padding-left:2em; 
+        
+    }
+    .signIn-form{
+        top: 29em !important;
+    }
+    .footer-section{
+        top: 55em !important;
+    }
+    .full-body{
+        max-height: 1256px;
+    }
+}
+.logo{
+   padding-left: 2.3rem;
+  
+   padding-right: 3em;
+    
+    align-items: start;
+    
+
+}
+
+@media (max-width: 768px){
+    .text svg {
+       
+        width: 70%; 
+        height: auto;
+    }
+    .logo {
+        padding-left:2em; 
+        
+    }
+    .signIn-form{
+        top: 29em !important;
+    }
+    .footer-section{
+        top: 55em !important;
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+    }
+    .full-body{
+        max-height: 1256px;
+    }
+}
+
+@media screen and (min-width:280px) and (max-width:550px) {
+    .logo{
+        padding-left: 1rem;
+    }
+    .full-body{
+        background: #030303;
+    }
+    .signIn-form{
+        padding-top: 0 !important;
+        padding-left: 3em !important;
+        padding-right: 3em !important;
+        top: 26em !important;
+    }
+    .footer-section{
+        top: 40em !important;
+        padding-left: 1em !important;
+        padding-right: 1em !important;
+        border-top: 1px solid #201f1f;
+        padding-bottom: 5em !important;
+    }
+    .footer-section .row, .footer-section .qsn{
+        padding-left: 1rem !important;
+    }
+    .full-body{
+        max-height: 1075px;
+    }
+    .inform-section{
+        margin-top: 5em !important;
+    }
+}
+
+@media(max-width:280px){
+   .signIn-form{
+    padding-left: 6em !important;
+    padding-right: 6em !important;
+   }
+   .footer-section{
+    top: 41em !important;
+    padding-left: 0em !important;
+   }
+   .footer-section .row, .footer-section .qsn{
+    padding-left: 1rem !important;
+   }
+   .full-body{
+    max-height: 1085px;
+   }
+   .emailPhone-error{
+    font-size: small !important;
+    bottom: -46px !important;
+   }
+   .password-error{
+    font-size: small !important;
+    bottom: -57px !important;
+   }
+   .inform-section{
+    margin-top: 4em !important;
+   }
+}
+.signIn-form{
+   position: absolute;
+    left: 50%;
+    top: 35%;
+    width: 430px;
+    padding-top: 3em;
+    padding-left: 4em;
+    padding-right: 4em;
+    padding-bottom: 9em;
+    border-radius: 4px;
+    background: rgba(0, 0, 0, 0.75);
+    transform: translate(-50%, -50%);
+}
+.signIn-form h2{
+    color: #fff;
+    font-size: 2rem;
+}
+.signIn-form .form-control{
+    width: 100%;
+    border-radius: 0.25rem;
+    background:#aba8a81a;
+    backdrop-filter: opacity(0%);
+    border:1px solid #767373;
+    line-height: 1.15rem;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.signIn-form #floatingInputInvalid{
+    color: #fff;
+}
+.signIn-form #floatingPassword{
+    color: #fff;
+}
+.signIn-form #signInForm_section #floatingInputInvalid +label{
+    color: #b6afaf;
+}
+.signIn-form #signInForm_section #floatingInputInvalid +label::after{
+    background-color: transparent;
+}
+.signIn-form #signInForm_section #floatingPassword +label{
+    color: #b6afaf;
+}
+.signIn-form #signInForm_section #floatingPassword +label::after{
+    background-color: transparent;
+}
+.signIn-form .form-floating>.form-control:focus +label{
+    color: rgba(255, 255, 255, 0.7);
+}
+.signIn-form #signInForm_section .form-floating>.form-control:focus +label::after{
+    background-color: transparent;
+}
+.signIn-form .form-control:focus{
+    border-radius: 0.25rem;
+    background:#aba8a81a;
+    border:1px solid #767373;
+    backdrop-filter: opacity(0%);
+    box-shadow: 0 0 0 2px #030303,0 0 0 4px #f8f6f6;
+    outline: none;
+}
+.signIn-form .signIn-btn{
+    width: 100%;
+    border-radius: 0.25rem;
+    border: 0;
+    background: rgb(229, 9, 20);
+    color: rgb(255, 255, 255);
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-size: .99rem;
+    font-weight: 500;
+    display: inline-block;
+    padding-top: .6em;
+    padding-bottom: .6em;
+    
+}
+.signIn-form .signIn-btn:hover{
+    background: rgb(180, 6, 15);
+}
+.forgot-password a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.checkbox-wrapper-23 *,
+        .checkbox-wrapper-23 *:after,
+        .checkbox-wrapper-23 *:before {
+          box-sizing: border-box;
+        }
+      
+        .checkbox-wrapper-23 input {
+          position: absolute;
+          opacity: 0;
+        }
+          
+        .checkbox-wrapper-23 input:checked + label svg path {
+          stroke-dashoffset: 0;
+        }
+          
+        .checkbox-wrapper-23 input:focus + label {
+          transform: scale(1.03);
+        }
+      
+        .checkbox-wrapper-23 input + label {
+          display: block;
+          border: 1px solid #767373;
+          width: 1.3em;
+          height: 1.3em;
+          border-radius: 2px;
+          cursor: pointer;
+          transition: all .2s ease;
+        }
+          
+        .checkbox-wrapper-23 input + label:active {
+          transform: scale(1.05);
+          border-radius: 12px;
+        }
+          
+        .checkbox-wrapper-23 input + label svg {
+          pointer-events: none;
+          padding: 5%;
+          margin-left: 2px;
+          vertical-align: inherit;
+        }
+      
+        .checkbox-wrapper-23 input + label svg path {      
+          fill: none;     
+          stroke: #333;
+          stroke-width: 4px;
+          stroke-linecap: round;
+          stroke-linejoin: round;
+          stroke-dasharray: 100;
+          stroke-dashoffset: 101;
+          transition: all 250ms cubic-bezier(1,0,.37,.91);
+        }
+        .checkbox-wrapper-23 input[type="checkbox"] {
+    display: none; 
+  }
+  
+  .checkbox-wrapper-23 label {
+    cursor: pointer;
+    display: inline-block;
+    width: var(--size);
+    height: var(--size);
+    background-color: black; 
+  }
+  
+  .checkbox-wrapper-23 input[type="checkbox"]:checked + label {
+    background-color: white; 
+  }
+.inform-section{
+    margin-top: 6em;
+    color:rgba(255, 255, 255, 0.7);
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+}
+.inform-section .Remember-me{
+    color: rgb(255, 255, 255);
+}
+.inform-section .signUp-link a{
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+}
+.inform-section .learn-more{
+    font-size: 0.8125rem;
+}
+.learn-more a{
+    text-decoration: none;
+}
+
+
+.emailPhone-error{
+    color: red;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    position: absolute;
+    bottom: -45px;
+   
+    width: 100%;
+    padding: 1em;
+}
+.password-error{
+    color: red;
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    position: absolute;
+    bottom: -63px;
+   
+    width: 100%;
+    padding: 1em;
+}
+/*------------------*/
+
+.footer-section{
+    background: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    left: 0;
+    top: 70%;
+    width: 100%;
+    padding-top: 5em;
+    padding-bottom: 7em;
+    padding-left: 5em;
+    padding-right: 5em;
+}
+.footer-section p, .footer-section a{
+    color: rgba(255, 255, 255, 0.7);
+}
+.footer-section ul{
+    padding-left: 0;
+}
+.footer-section li{
+    list-style-type: none;
+}
+#language_selector2{
+    width: 9em;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    background:#aba8a81a;
+    backdrop-filter: opacity(0%);
+    border:1px solid #767373;
+    line-height: 1.15rem;
+    height: 1.9em;
+    font-size: 1rem;
+    padding-bottom: 1.5em;
+    font-family: Netflix Sans, Helvetica Neue, Segoe UI, Roboto, Ubuntu, sans-serif;
+    font-weight: 500;
+    margin-right: 1.5em;
+    
+}
+.dropdown-section{
+    padding-top: 1em;
+    padding-bottom: 5.3em;
+}
+#language_selector2:focus{
+    
+    
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0 2px #030303,0 0 0 4px #f8f6f6;
+   
+}
+
+.footer-section .dropdown-menu.dropdown-menu-wide {
+    
+    min-width: 10%;
+    height: 5em;
+    text-align: center;
+    
+} 
+#lng-drop1{
+    color: black;
+    
+}
+#lng-drop2{
+    color: #000;
+    
+}
+#lng-drop1:hover{
+    background-color: #0256f1;
+    color: aliceblue;
+}
+
+#lng-drop2:hover{
+    background-color: #0256f1;
+    color: aliceblue;
+}
